@@ -1,0 +1,12 @@
+.navbar p {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.centered {
+  text-align: center;
+}
+
+.body {
+  margin-top: 70px;
+}

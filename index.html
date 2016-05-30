@@ -1,61 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags always come first -->
-     <meta charset="utf-8">
-      
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-      
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-    <style type="text/css">
-      .navbar p {
-        font-size: 2em;
-        font-weight: bold;
-      }
-
-      .centered {
-        text-align: center;
-      }
-
-      .body {
-        margin-top: 70px;
-      }
-
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
   </head>
+
   <body>
-    <nav class="navbar navbar-light centered" style="background-color: #e3f2fd;">
-          <p class="nav-link" href="#">Trivia</p>
-    </nav>
-
-    <div class="container-fluid body">
-      <div class="centered">
-
-        <div id="begin_quiz_div">
-          <a class="btn btn-info-outline btn-lg " align="middle" id="begin_quiz_button">Begin Quiz!!!</a>
-        </div>
-          <div class="init_invisible">
-            <div id="question">
-
-            </div>
-            <div id = "choices">
-                <input type="radio" name="answer" value="true"> True<br>
-                <input type="radio" name="answer" value="false"> False<br>
-            </div>
-
-            <div id="submit_answer_button" class="btn btn-sm btn-primary-outline">
-              Submit answer
-            </div>
-          </div>  
-      </div>
+    <div id="header">
+      <nav class="navbar navbar-light centered" style="background-color: #e3f2fd;">
+            <p class="nav-link" href="#">Trivia</p>
+      </nav>
     </div>
 
+    <div id="body">
+      <div class="container-fluid body">
+        <div class="centered">
+
+          <div id="begin_quiz_div">
+            <a class="btn btn-info-outline btn-lg " align="middle" id="begin_quiz_button">Begin Quiz!</a>
+          </div>
+
+            <div class="init_invisible">
+            <div id="question"></div>
+
+            <div id ="choices">
+                <input type="radio" name="answer" value="true" id="radio_true"> True<br>
+                <input type="radio" name="answer" value="false" id="radio_false"> False<br>
+            </div>
+
+            <div id="submit_answer_button" class="btn btn-sm btn-primary-outline">Submit answer</div>
+
+          </div>  
+        </div>
+      </div>
+    </div>
 
     <!-- jQuery first, then Bootstrap JS. -->
     <script type="text/javascript" src="js/Trivia.js"></script>
