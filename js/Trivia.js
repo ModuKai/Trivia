@@ -4,3 +4,11 @@ questions.set("Hunter College is located in Queens", false)
 questions.set("The abacus was invented by the Incas", false)
 questions.set("The year 2000 bug resulted from an error in the assembly of transistors for IBM computers", false)
 
+document.getElementById("begin_quiz_button").onclick = function() {
+
+}
+
+document.getElementById("submit_answer_button").onclick = function() {
+	
+}
+
